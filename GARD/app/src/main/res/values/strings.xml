@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">GARD</string>
+    <string name="action_file_name">文件</string>
+    <string name="action_file_open_name">打开</string>
+    <string name="action_file_save_name">保存</string>
+    <string name="action_file_saveas_name">另存为</string>
+    <string name="action_file_save_jpg_name">保存JPG图</string>
+    <string name="action_file_save_png_name">保存PNG图</string>
+    <string name="action_filter_prev_name"> &lt; </string>
+    <string name="action_filter_next_name"> &gt; </string>
+    <string name="action_filter_name">过滤</string>
+    <string name="action_filter_org_name">原始图</string>
+    <string name="action_filter_e_ether_name">电以太</string>
+    <string name="action_filter_l_ether_name">光以太</string>
+    <string name="action_filter_g_ether_name">重力以太</string>
+    <string name="action_filter_text">文本</string>
+    <string name="action_edit_name">编辑</string>
+    <string name="action_edit_align_name">对齐</string>
+    <string name="action_edit_align_left_name">向左</string>
+    <string name="action_edit_align_right_name">向右</string>
+    <string name="action_edit_align_top_name">向上</string>
+    <string name="action_edit_align_bottom_name">向下</string>
+    <string name="action_edit_average_name">平分</string>
+    <string name="action_edit_average_horizontal_name">水平</string>
+    <string name="action_edit_average_vertical_name">垂直</string>
+    <string name="action_edit_average_auto_name">自动</string>
+    <string name="action_edit_revert_name">反转</string>
+    <string name="action_edit_revert_horizontal_name">水平</string>
+    <string name="action_edit_revert_vertical_name">垂直</string>
+    <string name="action_edit_revert_pn_name">正负</string>
+    <string name="action_edit_copy_name">复制</string>
+    <string name="action_edit_paste_name">粘贴</string>
+    <string name="close">关闭</string>
+    <string name="about">关于</string>
+    <string name="about_title">GARD V1.0.0</string>
+    <string name="theory">原理</string>
+    <string name="about_dialog_text">
+        <i>作者: 重力以太</i>
+        \n
+        \n
+        <i>联系：79285307@qq.com</i>
+        \n
+        \n
+        <b>GARD (Gravitational Aether R&amp;D) --- 本APP是为了研究反重力而设计的APP，欢迎使用！ 如果你觉得赞，那么就一起来转发给其他人，一起分享吧！
+        </b>
+        \n
+        \n
+        <b>需要了解更多信息，请关注重力以太吧。 有任何建议或者反馈可以随时email作者。</b>
+    </string>
+    <string name="theory_tex">
+<b>GARD (Gravitational Aether R&amp;D) --- 本APP是为了研究反重力而设计的APP。</b>\n
+\n
+
+<b>定义</b>\n
+<b>以太：</b>以太是具备质量的，高速运动的，体积比电子小得多的粒子。以太可以根据功能划分成不同种类的以太。\n
+<b>重力以太（引力以太）： </b>重力以太的功能是产生引力。由于重力以太具备动量，当微观粒子两侧的重力以太浓度不同时，微观粒子受到的总冲量不等，从而表现出引力。根据这个原理可以推断，核力也有可能是由重力以太贡献。\n
+<b>电以太：</b>电以太的功能是产生库仑力，库仑力是电荷附近电以太分布不均匀的一种表象。电以太由电荷产生。电荷把一定数量的重力以太转化为一个电以太。电以太的体积、质量和内能均比重力以太大得多，动量比同等质量的重力以太小得多。因为存在正负两种电荷，所以也存在正负两种不同的电以太。\n
+<b>光以太：</b>光以太的功能是可以传递光。正负两个电以太构成一个光以太。任何一个电以太都可以从光以太里面置换出一个同样的电以太。\n
+<b>不穿透：</b>指两个粒子相遇时，发生弹性碰撞。\n
+<b>穿透：</b>指两个粒子相遇时，每个粒子都可以保持自己的运行状态，不发生碰撞。 \n
+<b>不完全穿透：</b>指两个粒子相遇时，一个粒子保持自己的运行状态，另一个粒子转化为一种新的粒子，继续运动。\n
+\n
+<b>符号</b>\n
+<b>重力以太： </b>GA\n
+<b>电以太： </b>EA\n
+<b>正电以太： </b>PEA\n
+<b>负电以太： </b>NEA\n
+<b>光以太： </b>LA\n
+<b>电荷： </b>E\n
+<b>正电荷： </b>PE\n
+<b>负电荷： </b>NE\n
+<b>不穿透： </b>θ，读theta\n
+<b>穿透： </b>φ，读fai\n
+<b>不完全穿透： </b>ψ，读psi\n
+\n
+<b>穿透关系</b>\n
+<b>重力以太： </b>GA θ EA , GA θ LA, GA ψ E\n
+<b>电以太：     </b>EA θ GA, EA φ LA , PEA θ PE, PEA ψ NE , NEA θ NE, NEA ψ PE\n
+<b>光以太：     </b>LA θ GA, LA φ EA, LA ψ PE, LA ψ NE\n
+\n
+<b>同等质量的以太的关系</b>\n
+<b>动量关系： </b>GA &gt; EA &gt; LA \n
+<b>内能关系： </b>GA &lt; EA &lt; LA \n
+\n
+<b>转化关系 </b>\n
+<b>重力以太： </b>GA ψ PE = PEA ,  GA ψ NE = NEA \n
+<b>电以太：   </b>PEA ψ NE = NEA, NEA ψ PE = PEA, PEA+NEA=LA \n
+<b>光以太：   </b>LA ψ PE = PEA ,  LA ψ NE = NEA \n
+\n
+\n
+<b>假设</b>\n
+<b>假设1：</b>空间充满各种以太。\n
+<b>假设2：</b>宇宙质量守恒。\n
+<b>假设3：</b>电场由电以太组成。\n
+<b>假设4：</b>一个正电以太PEA和一个负电以太NEA可以组成一个光以太LA。\n
+<b>假设5：</b>穿透关系成立。\n
+\n
+<b>推导1：</b>因为电场由电以太组成，且电场由电荷激发，所以，根据宇宙质量守恒原理，可以推断出必然有一种粒子被电荷转化为电以太。这种粒子称之为重力以太。\n
+<b>推导2：</b>因为电荷把附近的重力以太转化为电以太，所以，电荷附近的电以太的浓度从内向外降低，重力以太则相反。\n
+<b>推导3：</b>因为根据库仑定律可知，在三维空间，电场强度与半径的平方成反比，所以，在二维空间，电场强度与半径成反比。\n
+<b>推导4：</b>因为电场由电以太组成，且电场强度符合库伦定律，所以，电以太的浓度符合库仑定律。\n
+<b>推导5：</b>因为重力以太无法穿透电以太，所以，一个空间的电以太或者光以太浓度增加，那么重力以太的浓度就会降低。\n
+<b>推导6：</b>因为电以太由重力以太合成，光以太由正负电以太合成，所以，重力以太质量最小，其次是电以太，最后是光以太。因此，同等质量的以太关系成立。\n
+\n
+\n
+<b>APP实现原理 </b>\n
+\n
+本APP是一个二维空间的以太粒子的演示程序。\n
+\n
+本APP使用二维空间的库伦定律计算空间中每个点的电以太的浓度，然后通过亮度来把浓度体现出来。\n
+\n
+正电以太使用红色表示，越红表示正电以太的浓度越高，反之浓度就越低。\n
+负电以太使用蓝色表示，越蓝表示负电以太的浓度越高，反之浓度就越低。\n
+\n
+光以太使用红蓝混合色表示，亮度越高表示光以太的浓度越高，反之浓度就越低。\n
+\n
+重力以太的浓度的计算是使用一个设定的值减去光以太和电以太的浓度；光以太和电以太浓度越高，重力以太的浓度就越低。\n
+重力以太使用灰度表示，越亮表示重力以太的浓度越高，越暗浓度就越低。\n
+\n
+\n
+<b>注意： </b>\n
+本程序没有考虑运动电荷对光以太、电以太和重力以太的影响。\n
+本程序不能解析为什么不同频率的光在不同密度的光以太中传播的折射率不同。\n
+\n
+    </string>
+    <string name="sample">例子</string>
+    <string name="action_sample_einstein_space_name">爱恩斯坦空间</string>
+    <string name="action_sample_electro_optical_effect_name">电光效应</string>
+    <string name="action_sample_coulomb_force_name">库仑力</string>
+    <string name="action_sample_coulomb_force1_name">同种电荷</string>
+    <string name="action_sample_coulomb_force2_name">异种电荷</string>
+    <string name="action_sample_coulomb_force3_name">混合电荷</string>
+    <string name="action_sample_artificial_gravity_name">人工重力</string>
+    <string name="action_sample_parallel_capacitor_name">平行板电容器</string>
+    <string name="action_sample_flying_lifter_name">飘升机</string>
+    <string name="action_sample_flying_lifter2_name">飘升机2</string>
+    <string name="action_sample_flying_saucer_name">飞碟</string>
+</resources>

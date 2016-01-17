@@ -1,0 +1,165 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gard.hub.gard.MainActivity">
+
+    <item
+        android:id="@+id/action_filter_prev"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_media_previous"
+        app:showAsAction="ifRoom" >
+    </item>
+
+    <item
+        android:id="@+id/action_filter_next"
+        android:orderInCategory="101"
+        android:icon="@android:drawable/ic_media_next"
+        app:showAsAction="ifRoom" >
+    </item>
+
+    <item
+        android:id="@+id/action_filter"
+        android:orderInCategory="102"
+        android:title="@string/action_filter_name"
+        app:showAsAction="never" >
+        <menu>
+            <item android:id="@+id/action_filter_org"
+                android:title="@string/action_filter_org_name" />
+            <item android:id="@+id/action_filter_e_ether"
+                android:title="@string/action_filter_e_ether_name" />
+            <item android:id="@+id/action_filter_l_ether"
+                android:title="@string/action_filter_l_ether_name" />
+            <item android:id="@+id/action_filter_g_ether"
+                android:title="@string/action_filter_g_ether_name" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_file"
+        android:orderInCategory="103"
+        android:title="@string/action_file_name"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/action_file_open"
+                android:title="@string/action_file_open_name" />
+            <item android:id="@+id/action_file_save"
+                android:title="@string/action_file_save_name" />
+            <item android:id="@+id/action_file_saveas"
+                android:title="@string/action_file_saveas_name" />
+            <item android:id="@+id/action_file_save_jpg"
+                android:title="@string/action_file_save_jpg_name" />
+            <item android:id="@+id/action_file_save_png"
+                android:title="@string/action_file_save_png_name" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_edit"
+        android:orderInCategory="104"
+        android:title="@string/action_edit_name"
+        app:showAsAction="never" >
+        <menu>
+            <item
+                android:id="@+id/action_edit_align"
+                android:orderInCategory="105"
+                android:title="@string/action_edit_align_name"
+                app:showAsAction="never" >
+                <menu>
+                    <item android:id="@+id/action_edit_align_left"
+                        android:title="@string/action_edit_align_left_name" />
+                    <item android:id="@+id/action_edit_align_right"
+                        android:title="@string/action_edit_align_right_name" />
+                    <item android:id="@+id/action_edit_align_top"
+                        android:title="@string/action_edit_align_top_name" />
+                    <item android:id="@+id/action_edit_align_bottom"
+                        android:title="@string/action_edit_align_bottom_name" />
+                </menu>
+            </item>
+            <item
+                android:id="@+id/action_edit_average"
+                android:orderInCategory="106"
+                android:title="@string/action_edit_average_name"
+                app:showAsAction="never" >
+                <menu>
+                    <item android:id="@+id/action_edit_average_horizontal"
+                        android:title="@string/action_edit_average_horizontal_name" />
+                    <item android:id="@+id/action_edit_average_vertical"
+                        android:title="@string/action_edit_average_vertical_name" />
+                    <item android:id="@+id/action_edit_average_auto"
+                        android:title="@string/action_edit_average_auto_name" />
+                </menu>
+            </item>
+            <item
+                android:id="@+id/action_edit_revert"
+                android:orderInCategory="107"
+                android:title="@string/action_edit_revert_name"
+                app:showAsAction="never" >
+                <menu>
+                    <item android:id="@+id/action_edit_revert_horizontal"
+                        android:title="@string/action_edit_revert_horizontal_name" />
+                    <item android:id="@+id/action_edit_revert_vertical"
+                        android:title="@string/action_edit_revert_vertical_name" />
+                    <item android:id="@+id/action_edit_revert_pn"
+                        android:title="@string/action_edit_revert_pn_name" />
+                </menu>
+            </item>
+            <item
+                android:id="@+id/action_edit_copy"
+                android:orderInCategory="108"
+                android:title="@string/action_edit_copy_name" />
+            <item
+                android:id="@+id/action_edit_paste"
+                android:orderInCategory="109"
+                android:title="@string/action_edit_paste_name" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_show_theory"
+        android:orderInCategory="110"
+        android:title="@string/theory">
+    </item>
+
+    <item
+        android:id="@+id/action_show_about"
+        android:orderInCategory="111"
+        android:title="@string/about">
+    </item>
+
+    <item
+        android:id="@+id/action_sample"
+        android:orderInCategory="112"
+        android:title="@string/sample">
+        <menu>
+            <item android:id="@+id/action_sample_einstein_space"
+                android:title="@string/action_sample_einstein_space_name" />
+            <item android:id="@+id/action_sample_electro_optical_effect"
+                android:title="@string/action_sample_electro_optical_effect_name" />
+            <item android:id="@+id/action_sample_coulomb_force"
+                android:title="@string/action_sample_coulomb_force_name" >
+                <menu>
+                    <item android:id="@+id/action_sample_coulomb_force1"
+                        android:title="@string/action_sample_coulomb_force1_name" />
+                    <item android:id="@+id/action_sample_coulomb_force2"
+                        android:title="@string/action_sample_coulomb_force2_name" />
+                    <item android:id="@+id/action_sample_coulomb_force3"
+                        android:title="@string/action_sample_coulomb_force3_name" >
+                    </item>
+                </menu>
+            </item>
+            <item android:id="@+id/action_sample_artificial_gravity"
+                android:title="@string/action_sample_artificial_gravity_name" >
+                <menu>
+                    <item android:id="@+id/action_sample_parallel_capacitor"
+                        android:title="@string/action_sample_parallel_capacitor_name" />
+                    <item android:id="@+id/action_sample_flying_lifter"
+                        android:title="@string/action_sample_flying_lifter_name" />
+                    <item android:id="@+id/action_sample_flying_lifter2"
+                        android:title="@string/action_sample_flying_lifter2_name" />
+                    <item android:id="@+id/action_sample_flying_saucer"
+                        android:title="@string/action_sample_flying_saucer_name" />
+                </menu>
+            </item>
+        </menu>
+    </item>
+</menu>

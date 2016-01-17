@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.gard.hub.gard.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#08f4f4">
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+PE"
+                    android:id="@+id/buttonAddPE"
+                    android:layout_column="1"
+                    android:onClick="addPEButtonClick" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+NE"
+                    android:id="@+id/buttonAddNE"
+                    android:layout_column="2"
+                    android:onClick="addNEButtonClick" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:id="@+id/buttonDel"
+                    android:layout_column="3"
+                    android:onClick="deleteButtonClick" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="重做"
+                    android:id="@+id/buttonRedo"
+                    android:layout_column="4"
+                    android:onClick="redoButtonClick" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="撤销"
+                    android:id="@+id/buttonUndo"
+                    android:layout_column="5"
+                    android:onClick="undoButtonClick" />
+
+                <ToggleButton
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toggleButtonGrid"
+                    android:layout_column="6"
+                    android:textOn="格"
+                    android:textOff="方"
+                    android:clickable="true"
+                    android:checked="false"
+                    android:enabled="true" />
+
+                <ToggleButton
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toggleButtonHelp"
+                    android:layout_column="8"
+                    android:textOn="？"
+                    android:textOff="帮助"
+                    android:clickable="true"
+                    android:checked="false"
+                    android:enabled="true" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#08f4f4">
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="大"
+                    android:id="@+id/buttonScaleUp"
+                    android:layout_column="1"
+                    android:onClick="scaleUpButtonClick" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小"
+                    android:id="@+id/buttonScaleDown"
+                    android:layout_column="2"
+                    android:onClick="scaleDownButtonClick" />
+
+                <ToggleButton
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toggleButtonMoveH"
+                    android:layout_column="3"
+                    android:textOn="--"
+                    android:textOff="平移"
+                    android:clickable="true"
+                    android:checked="false"
+                    android:enabled="true" />
+
+                <ToggleButton
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toggleButtonMoveV"
+                    android:layout_column="4"
+                    android:textOn="|"
+                    android:textOff="直移"
+                    android:clickable="true"
+                    android:checked="false"
+                    android:enabled="true" />
+
+                <ToggleButton
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toggleButtonLineMode"
+                    android:layout_column="5"
+                    android:textOn="线"
+                    android:textOff="框"
+                    android:clickable="true"
+                    android:checked="false"
+                    android:enabled="true" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="刷新"
+                    android:id="@+id/buttonReflesh"
+                    android:layout_column="6"
+                    android:onClick="refleshButtonClick" />
+
+                <ToggleButton
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toggleButtonContentMode"
+                    android:layout_column="8"
+                    android:textOn="文"
+                    android:textOff="图"
+                    android:clickable="true"
+                    android:checked="false"
+                    android:enabled="true" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#08f4f4">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableRow>
+
+        </TableLayout>
+
+        <ViewSwitcher
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewSwitcher"
+            android:layout_gravity="center_horizontal" >
+
+            <com.gard.hub.gard.BitmapView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bmpView" >
+            </com.gard.hub.gard.BitmapView>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView"
+                android:clickable="true"
+                android:contextClickable="true">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dip"
+                    android:id="@+id/editText"
+                    android:inputType="textMultiLine" />
+            </ScrollView>
+
+        </ViewSwitcher>
+    </LinearLayout>
+
+</RelativeLayout>
