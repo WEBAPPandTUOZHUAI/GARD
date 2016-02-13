@@ -32,7 +32,7 @@
     <string name="action_edit_paste_name">粘贴</string>
     <string name="close">关闭</string>
     <string name="about">关于</string>
-    <string name="about_title">GARD V1.0.0</string>
+    <string name="about_title">GARD V1.0.1</string>
     <string name="theory">原理</string>
     <string name="about_dialog_text">
         <i>作者: 重力以太</i>
@@ -135,4 +135,5 @@
     <string name="action_sample_flying_lifter_name">飘升机</string>
     <string name="action_sample_flying_lifter2_name">飘升机2</string>
     <string name="action_sample_flying_saucer_name">飞碟</string>
+    <string name="action_sample_ring_name">环</string>
 </resources>

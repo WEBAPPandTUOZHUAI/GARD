@@ -158,6 +158,8 @@
                         android:title="@string/action_sample_flying_lifter2_name" />
                     <item android:id="@+id/action_sample_flying_saucer"
                         android:title="@string/action_sample_flying_saucer_name" />
+                    <item android:id="@+id/action_sample_ring"
+                        android:title="@string/action_sample_ring_name" />
                 </menu>
             </item>
         </menu>

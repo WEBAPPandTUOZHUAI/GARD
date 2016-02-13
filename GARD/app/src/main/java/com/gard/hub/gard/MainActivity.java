@@ -419,6 +419,13 @@ public class MainActivity extends AppCompatActivity {
                 }
                 Sample.action_sample_flying_saucer(bmpView);
                 break;
+            case R.id.action_sample_ring:
+                if(bHelpMode){
+                    showMessage("本例子展示环形的重力以太分布");
+                    break;
+                }
+                Sample.action_sample_ring(bmpView);
+                break;
         }
 
         return super.onOptionsItemSelected(item);

@@ -60,6 +60,29 @@ public class Sample {
     }
 
     /**
+     * 本函数用来新建一些电荷，把它们放到一条圆上。
+     *
+     * @param space 指定二维空间；
+     * @param x 原点X坐标；
+     * @param y 原点Y坐标；
+     * @param radius 半径；
+     * @param count 指定新建多少个点；
+     * @param positive 如果是正电荷，设置为true；否则设定为false。
+     */
+    private static void createElectronsCircle(D2Space space,double x,double y,double radius,int count,boolean positive){
+        double da=2*Math.PI/count;
+        double a;
+        for(a=0;a<2*Math.PI;a+=da) {
+            double x1,y1;
+            x1=radius*Math.cos(a)+x;
+            y1=y-radius*Math.sin(a);
+            Point pos=new Point((int)x1,(int)y1);
+            if(positive) space.addPE(pos);
+            else space.addNE(pos);
+        }
+    }
+
+    /**
      * 演示爱恩斯坦空间扭曲的本质。
      *
      * @param bmpView 指定电荷创建到哪个位图查看对象。
@@ -312,4 +335,20 @@ public class Sample {
         bmpView.reflesh();
     }
 
+    /**
+     * 演示环形的分布情况。
+     *
+     * @param bmpView 指定电荷创建到哪个位图查看对象。
+     */
+    public static void action_sample_ring(BitmapView bmpView) {
+        D2Space space = bmpView.getSpace();
+        space.clear();
+        int nCount=32;
+        double nStepSize=4*D2Space.nElectronRadius;
+        double x=(bmpView.getWidth()-D2Space.nElectronRadius)/2;
+        double y=(bmpView.getHeight()-D2Space.nElectronRadius)/2;
+        createElectronsCircle(space,x/space.getScale(),y/space.getScale(),64,nCount,false);
+        createElectronsCircle(space,x/space.getScale(),y/space.getScale(),32,nCount,true);
+        bmpView.reflesh();
+    }
 }
